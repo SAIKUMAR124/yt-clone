@@ -1,7 +1,4 @@
-$colorRed: red;
-.app {
-  h1 {
-    margin-bottom: 100px;
-    color: $colorRed;
-  }
+.app__container{
+    display: flex;
+    height: 90vh;
 }
