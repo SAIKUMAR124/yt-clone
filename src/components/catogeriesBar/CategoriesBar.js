@@ -8,14 +8,10 @@ const keywords = [
   "React Native",
   "Use of API",
   "Redux",
-  "Music",
   "Algorithm art",
   "Guitar",
   "Cricket",
   "Sports",
-  "Football",
-  "Coding",
-  "Hockey",
   "Power Star Pawan Kalyan",
 ];
 
