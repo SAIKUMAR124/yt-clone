@@ -1,5 +1,6 @@
 import React from "react";
 import "./_sidebar.scss";
+
 import {
   MdSubscriptions,
   MdExitToApp,
@@ -24,21 +25,24 @@ const Sidebar = ({ sidebar, handleToggleSidebar }) => {
         <MdSubscriptions size={23} />
         <span>Subscriptions</span>
       </li>
+
       <li>
         <MdThumbUp size={23} />
         <span>Liked Video</span>
       </li>
+
       <li>
         <MdHistory size={23} />
         <span>History</span>
       </li>
+
       <li>
         <MdLibraryBooks size={23} />
         <span>Library</span>
       </li>
       <li>
         <MdSentimentDissatisfied size={23} />
-        <span>I don't know</span>
+        <span>I don't Know</span>
       </li>
       <hr />
       <li>

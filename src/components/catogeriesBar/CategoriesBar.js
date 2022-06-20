@@ -3,16 +3,22 @@ import "./_categoriesBar.scss";
 
 const keywords = [
   "All",
-  "React Js",
-  "Angular Js",
+  "React js",
+  "Angular js",
   "React Native",
-  "Use of API",
+  "use of API",
   "Redux",
-  "Algorithm art",
+  "Music",
+  "Algorithm Art ",
   "Guitar",
+  "Bengali Songs",
+  "Coding",
   "Cricket",
-  "Sports",
-  "Power Star Pawan Kalyan",
+  "Football",
+  "Real Madrid",
+  "Gatsby",
+  "Poor Coder",
+  "Shwetabh",
 ];
 
 const CategoriesBar = () => {
@@ -24,9 +30,11 @@ const CategoriesBar = () => {
 
   return (
     <div className="categoriesBar">
-      {keywords.map((value, index) => (
-        <span key={index} onClick={() => handleClick(value)}
-          className={activeElement === value? 'active': ''}
+      {keywords.map((value, i) => (
+        <span
+          onClick={() => handleClick(value)}
+          key={i}
+          className={activeElement === value ? "active" : ""}
         >
           {value}
         </span>

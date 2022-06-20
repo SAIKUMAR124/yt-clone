@@ -4,15 +4,18 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+
   padding: 1rem 3rem;
+
   background-color: $black-primary;
+
   height: 10vh;
   width: 100%;
 
+  z-index: 999;
   &__menu {
     display: none;
   }
-
   &__logo {
     width: 30px;
     height: 30px;
@@ -23,8 +26,8 @@
   form {
     flex: 0.6;
     display: flex;
-    margin: 0 0.1rem;
     padding: 0.1rem;
+    margin: 0 1rem;
     border-radius: 3px;
     border: 1.2px solid;
     background-color: $black-secondary;
@@ -41,15 +44,15 @@
         outline: none;
       }
     }
-    button{
-        padding: 0 1.25rem;
-        color: $text-color;
-        background: transparent;
-        border: none;
 
-        &:focus{
-            outline: none;
-        }
+    button {
+      padding: 0 1.25rem;
+      color: $text-color;
+      background: transparent;
+      border: none;
+      &:focus {
+        border: none;
+      }
     }
   }
 
@@ -58,7 +61,6 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-
     img {
       border-radius: 50%;
       width: 40px;
@@ -68,24 +70,23 @@
   }
 }
 
-@media (max-width: $breakpoint-small){
-    .header{
-        padding: 1rem;
+@media (max-width: $breakpoint-small) {
+  .header {
+    padding: 1rem;
 
-        form{
-            flex: 1;
-        }
-
-        &__menu {
-            display: block;
-        }
-
-        &__logo{
-            display: none;
-        }
-
-        &__icons>*:not(img){
-            display: none;
-        }
+    form {
+      flex: 1;
     }
+
+    &__menu {
+      display: block;
+    }
+    &__logo {
+      display: none;
+    }
+
+    &__icons > *:not(img) {
+      display: none;
+    }
+  }
 }
