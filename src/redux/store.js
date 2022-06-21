@@ -1,17 +1,14 @@
-import { applyMiddleware, createStore } from "redux";
+import { applyMiddleware, combineReducers, createStore } from "redux";
 import { composeWithDevTools } from "redux-devtools-extension";
 import thunk from "redux-thunk";
+import { authReducer } from "./reducers/auth.reducer";
 
-const initialState = {
-  name: "Pavan",
-  age: 25,
-};
-
-const reducer = (initialState) => initialState;
+const rootReducer = combineReducers({
+  auth: authReducer,
+});
 
 const store = createStore(
-  reducer,
-  initialState,
+  rootReducer,{},
   composeWithDevTools(applyMiddleware(thunk))
 );
 
