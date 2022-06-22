@@ -3,6 +3,7 @@ import {
   LOGIN_REQUEST,
   LOGIN_SUCCESS,
   LOAD_PROFILE,
+  LOG_OUT,
 } from "./../actionTypes";
 
 const initialState = {
@@ -42,6 +43,12 @@ export const authReducer = (state = initialState, action) => {
         ...state,
         user: payload,
       };
+    case LOG_OUT:
+      return {
+        ...state,
+        accessToken: null,
+        user: null
+      }
 
     default:
       return state;
